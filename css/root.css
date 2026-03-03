@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "A4 Speed Bold";
+    src: url(../fonts/a4speed-bold.ttf);
+}
+
+:root{
+    --cor-destaque: rgb(222, 113, 4);
+    --arrendondamento-padrao: 12px;
+    --fonte-destaque: "A4 Speed Bold";
+}

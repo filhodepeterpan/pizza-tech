@@ -1,0 +1,71 @@
+@import url(root.css);
+@import url(media-query.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+}
+
+#titulo{
+    margin: 0 0 1rem 0;
+}
+
+#titulo h1{
+    font-family: var(--fonte-destaque);
+    font-size: 3rem;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem;
+    background-color: white;
+    border-radius: var(--arrendondamento-padrao);
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-campo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.frase-destaque{
+    color: var(--cor-destaque);
+}
+
+#finalizar-pedido{
+    color: white;
+    background-color: var(--cor-destaque);
+    width: 100%;
+    border: none;
+    border-radius: var(--arrendondamento-padrao);
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+#finalizar-pedido:hover{
+    cursor: pointer;
+    opacity: 85%;
+    transition: .3s;
+}
