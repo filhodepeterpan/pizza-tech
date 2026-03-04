@@ -39,21 +39,21 @@
                 </div>
             </div>
             <div class="form-campo">
-                <label for="borda">Bebidas</label>
+                <label for="bebidas">Bebidas</label>
                 <div class="checkobx-item">
-                    <input type="checkbox" name="borda"value="Nenhuma">
+                    <input type="checkbox" name="bebida"value="Nenhuma">
                     <span>Nenhuma</span>
                 </div>
                 <div class="checkobx-item">
-                    <input type="checkbox" name="borda" value="Refrigerante Lata">
+                    <input type="checkbox" name="bebida" value="Refrigerante Lata">
                     <span>Refrigerante Lata (+ R$8,00)</span>
                 </div>
                 <div class="checkobx-item">
-                    <input type="checkbox" name="borda" value="Refrigerante 2L">
+                    <input type="checkbox" name="bebida" value="Refrigerante 2L">
                     <span>Refrigerante 2L (+ RS20,00)</span>
                 </div>
                 <div class="checkobx-item">
-                    <input type="checkbox" name="borda" value="Água">
+                    <input type="checkbox" name="agua" value="Água">
                     <span>Água (+ RS5,00)</span>
                 </div>
             </div>
@@ -62,3 +62,17 @@
     </div>
 </body>
 </html>
+
+<?php
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $nome = $_POST["nome"];
+        $sabor = $_POST["sabor"];
+        $borda = $_POST["borda"];
+        $bebida = $_POST["bebida"];
+
+        echo "<h1>Pedido Finalizado!</h1>";
+        echo "<p>Nome: $nome</p>";
+        echo "<p>Sabor: $sabor</p>";
+        echo "<p>Borda Recheada: $borda</p>";
+        echo "<p>Bebida: $bebida</p>";
+    }
