@@ -54,7 +54,7 @@ form{
     color: var(--cor-destaque);
 }
 
-#finalizar-pedido{
+#abrir-comanda{
     color: white;
     background-color: var(--cor-destaque);
     width: 100%;
@@ -62,10 +62,46 @@ form{
     border-radius: var(--arrendondamento-padrao);
     margin: 1rem 0;
     padding: 0.5rem 0;
+    cursor: pointer;
 }
 
-#finalizar-pedido:hover{
-    cursor: pointer;
+#abrir-comanda:hover, #fechar-comanda:hover{
     opacity: 85%;
     transition: .3s;
+}
+
+#comanda {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border-radius: var(--arrendondamento-padrao);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.comanda-botao{
+    display: flex;
+    justify-content: end;
+}
+
+#fechar-comanda {
+    background-color: inherit;
+    color: var(--cor-destaque);
+    border: none;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.1rem 0.25rem;
+    margin: 0 0 1rem 0;
+    cursor: pointer;
+}
+
+#total{
+    display: flex;
+    justify-content: space-between;
+}
+
+#preco{
+    color: green;
 }
