@@ -88,6 +88,7 @@
                 $total += $precos_bebidas[$bebida];
             }
 
+            echo "<div id='overlay'></div>";
             echo "<div id='comanda'>";
             echo "<span class='comanda-botao'><button id='fechar-comanda'>X</button></span>";
 
